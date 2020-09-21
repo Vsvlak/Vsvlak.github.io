@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+p {
+  font-size: 1.5rem;
+  color: white;
+  text-align: justify;
+}
+
+h5 {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: rgb(165, 80, 23);
+}
+
+h6 {
+  font-size: 2rem;
+  display: inline;
+  color: rgb(165, 80, 23);
+}
+
+/*---------------------------------------------Pagina 1-----------------------------------------------*/
+.pagina1 {
+  margin: auto;
+  position: relative;
+}
+
+#foto1 {
+  width: 100%;
+}
+
+#tekstkader1 {
+  background: black;
+  border: 1rem solid rgb(165, 80, 23);
+  position: absolute;
+  width: 28%;
+  height: 45%;
+  top: 3%;
+  left: 5rem;
+  z-index: 1;
+}
+
+#titelP1 {
+  position: relative;
+  top: 4rem;
+  left: 4rem;
+  margin-right: 8rem;
+}
+
+#paragraafP1 {
+  position: relative;
+  top: 5rem;
+  left: 4rem;
+  margin-right: 8rem;
+}
+
+#videoMotivatie {
+  position: relative;
+  left: 1rem;
+  top: 6rem;
+  width: 95%;
+}
+
+#uitlegFoto1 {
+  position: absolute;
+  width: 28%;
+  height: 22%;
+  background: black;
+  border: 1rem solid rgb(165, 80, 23);
+  top: 50%;
+  left: 5rem;
+}
+
+#tekstKaderFoto1 {
+  position: relative;
+  margin: 2rem;
+  width: 92%;
+}
+
+/*---------------------------------------------Pagina 2-----------------------------------------------*/
+
+#pagina2 {
+  background: black;
+  height: 100%;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  z-index: 8;
+  position: absolute;
+}
+
+.introContainer {
+  height: 20rem;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.miniFoto {
+  border-radius: 50%;
+  position: absolute;
+  width: 12%;
+  top: 30%;
+  left: 8%;
+}
+
+.titel {
+  position: relative;
+  font-size: 3.5rem;
+  left: 38%;
+  width: 30%;
+  top: 8rem;
+  color: rgb(165, 80, 23);
+}
+
+.seperator {
+  position: absolute;
+  top: 22rem;
+  left: 25%;
+  width: 55%;
+  height: 0.1rem;
+  border: 0.1rem dashed rgb(165, 80, 23);
+}
+
+.tekstContainer {
+  position: relative;
+  top: 5rem;
+  left: 30%;
+  width: 50%;
+  height: 65rem;
+  border: 0.5rem solid rgb(165, 80, 23);
+}
+
+.tekst {
+  position: relative;
+  margin: 1rem;
+  top: 0.5rem;
+  text-align: justify;
+}
+
+#videoKennisopdracht {
+  position: relative;
+  top: 6rem;
+  left: 25%;
+  width: 50%;
+}
+
+.containerSummary {
+  position: relative;
+  border: 0.5rem solid rgb(165, 80, 23);
+  width: 20%;
+  height: 55rem;
+  top: -50rem;
+  left: 5%;
+}
+
+#summaryTekst {
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+  width: 95%;
+}
+
+/*---------------------------------------------Pagina 3-----------------------------------------------*/
+#pagina3 {
+  background: black;
+  height: 100%;
+  width: 100%;
+  top: 200%;
+  left: 0;
+  z-index: 8;
+  position: absolute;
+}
+
+#chartImg {
+  position: relative;
+  cursor: pointer;
+  top: 6rem;
+  left: 25%;
+  width: 50%;
+  border: 1px solid white;
+  border-radius: 1rem;
+}
+
+tr {
+  font-size: 1.5rem;
+}
+
+/*--------- PB -------------*/
+
+.containerpb {
+  display: inline-block;
+  position: relative;
+  margin: 1rem auto;
+  width: 60rem;
+  left: 5rem;
+}
+
+.containerpbss {
+  display: inline-block;
+  position: relative;
+  margin: 1rem auto;
+  width: 52rem;
+  left: 5rem;
+}
+
+.progress {
+  padding: 6px;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25),
+    0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar {
+  height: 18px;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.05)
+  );
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.progress-moved .progress-bar {
+  width: 85%;
+  background-color: #3f38a3;
+  animation: progressAnimation 4s;
+}
+
+#progress-barJava {
+  width: 90%;
+  background-color: #29b430;
+  animation: progressAnimation 4s;
+}
+
+#progress-barSpring {
+  width: 70%;
+  background-color: #38a365;
+  animation: progressAnimation 4s;
+}
+#progress-barJavascript {
+  width: 70%;
+  background-color: #38a365;
+  animation: progressAnimation 4s;
+}
+#progress-barAngular {
+  width: 35%;
+  background-color: #4e4070;
+  animation: progressAnimation 4s;
+}
+#progress-barTypescript {
+  width: 35%;
+  background-color: #4e4070;
+  animation: progressAnimation 4s;
+}
+#progress-barSql {
+  width: 75%;
+  background-color: #2d924b;
+  animation: progressAnimation 4s;
+}
+#progress-barGit {
+  width: 80%;
+  background-color: #1f8f40;
+  animation: progressAnimation 4s;
+}
+
+#progress-barNederlands {
+  width: 95%;
+  background-color: #01b938;
+  animation: progressAnimation 4s;
+}
+
+#progress-barEngels {
+  width: 85%;
+  background-color: #179c3f;
+  animation: progressAnimation 4s;
+}
+
+#progress-barScrum {
+  width: 80%;
+  background-color: #1f8f40;
+  animation: progressAnimation 4s;
+}
+
+#progress-barTeamverband {
+  width: 90%;
+  background-color: #14a03e;
+  animation: progressAnimation 4s;
+}
+
+#progress-barProbleemoplossend {
+  width: 90%;
+  background-color: #14a03e;
+  animation: progressAnimation 4s;
+}
+
+#progress-barGeordend {
+  width: 85%;
+  background-color: #179c3f;
+  animation: progressAnimation 4s;
+}
+
+#progress-barLeergierig {
+  width: 95%;
+  background-color: #01b938;
+  animation: progressAnimation 4s;
+}
+
+@keyframes progressAnimation {
+  0% {
+    width: 0%;
+    background-color: #6261c4;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*---------------------------------------------Pagina 4-----------------------------------------------*/
+
+#pagina4 {
+  background: black;
+  height: 100%;
+  width: 100%;
+  top: 300%;
+  left: 0;
+  z-index: 8;
+  position: absolute;
+}
+
+#afbeeldingEindopdracht {
+  position: relative;
+  width: 50%;
+  top: 4rem;
+  left: 25%;
+}
+
+/*---------------------------------------------Menu-----------------------------------------------*/
+
+#fixedMenu {
+  position: fixed;
+  top: 10rem;
+  z-index: 12;
+  background: black;
+  border: 0.3rem solid rgb(165, 80, 23);
+  width: 13%;
+  height: 30rem;
+  left: 85%;
+}
+
+.fixedButton {
+  position: relative;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  left: 0.6rem;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  width: 95%;
+  height: 4rem;
+  cursor: pointer;
+  background: rgb(165, 80, 23);
+  border-radius: 1rem;
+  color: white;
+  box-shadow: 0 0.8rem rgb(107, 106, 96);
+}
+
+.fixedButton:hover {
+  background-color: rgb(80, 39, 11);
+}
+
+.fixedButton:active {
+  background-color: rgb(122, 96, 22);
+  box-shadow: 0 5px rgb(107, 106, 96);
+  transform: translateY(0.5rem);
+}

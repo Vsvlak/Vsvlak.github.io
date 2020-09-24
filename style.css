@@ -73,7 +73,7 @@ h6 {
 #videoMotivatie {
   position: relative;
   left: 1rem;
-  top: 6rem;
+  top: 3rem;
   width: 95%;
 }
 
@@ -202,7 +202,15 @@ tr {
   font-size: 1.5rem;
 }
 
-/*--------- PB -------------*/
+ul {
+  position: relative;
+  font-size: 1.5rem;
+  color: white;
+  left: 7%;
+  width: 85%;
+}
+
+/*----------- PB -------------*/
 
 .containerpb {
   display: inline-block;
@@ -241,10 +249,12 @@ tr {
 }
 
 .progress-moved .progress-bar {
-  width: 85%;
+  /*width: 85%;*/
   background-color: #3f38a3;
   animation: progressAnimation 4s;
 }
+
+/*--------------tab1---------------*/
 
 #progress-barJava {
   width: 90%;
@@ -282,24 +292,13 @@ tr {
   background-color: #1f8f40;
   animation: progressAnimation 4s;
 }
-
-#progress-barNederlands {
-  width: 95%;
-  background-color: #01b938;
-  animation: progressAnimation 4s;
-}
-
-#progress-barEngels {
-  width: 85%;
-  background-color: #179c3f;
-  animation: progressAnimation 4s;
-}
-
 #progress-barScrum {
-  width: 80%;
-  background-color: #1f8f40;
+  width: 90%;
+  background-color: #29b430;
   animation: progressAnimation 4s;
 }
+
+/*--------------tab2---------------*/
 
 #progress-barTeamverband {
   width: 90%;
@@ -324,6 +323,28 @@ tr {
   background-color: #01b938;
   animation: progressAnimation 4s;
 }
+
+#progress-barFlexibiliteit {
+  width: 90%;
+  background-color: #14a03e;
+  animation: progressAnimation 4s;
+}
+
+/*--------------tab3---------------*/
+
+#progress-barNederlands {
+  width: 95%;
+  background-color: #01b938;
+  animation: progressAnimation 4s;
+}
+
+#progress-barEngels {
+  width: 85%;
+  background-color: #179c3f;
+  animation: progressAnimation 4s;
+}
+
+/*--------------Eind Tabs---------------*/
 
 @keyframes progressAnimation {
   0% {
@@ -352,6 +373,12 @@ tr {
   width: 50%;
   top: 4rem;
   left: 25%;
+}
+
+.afbeeldingEindpresentatie {
+  position: relative;
+  width: 95%;
+  left: 2%;
 }
 
 /*---------------------------------------------Menu-----------------------------------------------*/

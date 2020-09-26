@@ -10,6 +10,8 @@
     <link rel="icon" href="/Afbeeldingen/FavIcon.png" />
     <link href="Modal/modal.css" rel="stylesheet" />
     <script defer src="Modal/modal.js"></script>
+    <link href="Lightbox/lightbox.css" rel="stylesheet" />
+    <script defer src="Lightbox/lightbox.js"></script>
     <link href="TabSkills/tabs.css" rel="stylesheet" />
     <script defer src="TabSkills/tabs.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -47,7 +49,7 @@
             is en mensen er toch het beste van maken. Ik heb me gerealiseerd dat wij het in Nederland wel 
             extreem goed hebben. Ik kan niet wachten tot ik weer naar Nepal kan gaan!
           </p>
-        </div>
+          </div>
         </div>
       </div>
     </article>
@@ -80,7 +82,7 @@
             het moment dat ik er achter kwam hoe gaaf ik het programmeren vind.
             Ik vind het vooral mooi om te zien dat je vanuit niets een product
             maakt dat men kan gebruiken en dat ik dit volledig
-            naar wens kan aanpassen. Toen ik bij YoungCapital Next terecht
+            naar wens kan aanpassen. Toen ik bij YoungCapital NEXT terecht
             kwam was ik inmiddels goed in staat om programma’s te maken en dit
             kon ik aantonen met behulp van mijn kennisopdracht. De opdracht die
             ik heb gemaakt is te zien in het filmpje hieronder.
@@ -167,7 +169,7 @@
             <br /><br />
             Wat betreft het programmeren ben ik eind 2019 begonnen met
             Javascript en ik ben daarna al snel overgestapt op Java. Daardoor ligt bij Java
-            het grootste deel van mijn kennis. Tijdens de Bootcamp van YoungCapital Next
+            het grootste deel van mijn kennis. Tijdens de Bootcamp van YoungCapital NEXT
             heb ik kennis opgedaan van Spring en Angular. <br>Als u
             geïnteresseerd bent in waar mijn vaardigheden allemaal liggen,<b> klik
             dan op het figuur hieronder.</b>
@@ -456,21 +458,209 @@
           <div id="summaryTekst">
             <h6 style="font-size: 3rem;">Eindpresentatie</h6>
             <br /><br />
-            <div>
-              <img
-              src="Afbeeldingen/Presentatie/Presentatie1.png"
-              class="afbeeldingEindpresentatie"
-              />
-              <br /><br /><br /><br />
-              <img
-                src="Afbeeldingen/Presentatie/Presentatie2.png"
-                class="afbeeldingEindpresentatie"
-              />
+            <div class="row">
+              <div class="column">
+                <img
+                  src="Afbeeldingen/Presentatie/Presentatie1.png"
+                  style="width: 100%"
+                  onclick="openModalImg();currentSlide(1)"
+                  class="hover-shadow cursor"
+                />
+              </div>
+              <div class="column">
+                <img
+                  src="Afbeeldingen/Presentatie/Presentatie2.png"
+                  style="width: 100%"
+                  onclick="openModalImg();currentSlide(2)"
+                  class="hover-shadow cursor"
+                />
+              </div>
             </div>
-            
+            <div class="row">
+              <div class="column">
+                <img
+                  src="Afbeeldingen/Presentatie/Presentatie3.png"
+                  style="width: 100%"
+                  onclick="openModalImg();currentSlide(3)"
+                  class="hover-shadow cursor"
+                />
+              </div>
+              <div class="column">
+                <img
+                  src="Afbeeldingen/Presentatie/Presentatie4.png"
+                  style="width: 100%"
+                  onclick="openModalImg();currentSlide(4)"
+                  class="hover-shadow cursor"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">
+                <img
+                  src="Afbeeldingen/Presentatie/Presentatie5.png"
+                  style="width: 100%"
+                  onclick="openModalImg();currentSlide(5)"
+                  class="hover-shadow cursor"
+                />
+              </div>
+              <div class="column">
+                <img
+                  src="Afbeeldingen/Presentatie/Presentatie6.png"
+                  style="width: 100%"
+                  onclick="openModalImg();currentSlide(6)"
+                  class="hover-shadow cursor"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">
+                <img
+                  src="Afbeeldingen/Presentatie/Presentatie7.png"
+                  style="width: 100%"
+                  onclick="openModalImg();currentSlide(7)"
+                  class="hover-shadow cursor"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+
+      <!------------------------------- Lightbox ------------------------------------>
+
+      <div id="myModal" class="modalImg">
+        <span class="close cursor" onclick="closeModalImg()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlides">
+            <div class="numbertext">1 / 7</div>
+            <img
+              src="Afbeeldingen/Presentatie/Presentatie1.png"
+              style="width: 100%"
+            />
+          </div>
+  
+          <div class="mySlides">
+            <div class="numbertext">2 / 7</div>
+            <img
+              src="Afbeeldingen/Presentatie/Presentatie2.png"
+              style="width: 100%"
+            />
+          </div>
+  
+          <div class="mySlides">
+            <div class="numbertext">3 / 7</div>
+            <img
+              src="Afbeeldingen/Presentatie/Presentatie3.png"
+              style="width: 100%"
+            />
+          </div>
+  
+          <div class="mySlides">
+            <div class="numbertext">4 / 7</div>
+            <img
+              src="Afbeeldingen/Presentatie/Presentatie4.png"
+              style="width: 100%"
+            />
+          </div>
+  
+          <div class="mySlides">
+            <div class="numbertext">5 / 7</div>
+            <img
+              src="Afbeeldingen/Presentatie/Presentatie5.png"
+              style="width: 100%"
+            />
+          </div>
+  
+          <div class="mySlides">
+            <div class="numbertext">6 / 7</div>
+            <img
+              src="Afbeeldingen/Presentatie/Presentatie6.png"
+              style="width: 100%"
+            />
+          </div>
+  
+          <div class="mySlides">
+            <div class="numbertext">7 / 7</div>
+            <img
+              src="Afbeeldingen/Presentatie/Presentatie7.png"
+              style="width: 100%"
+            />
+          </div>
+  
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+  
+          <div class="column2">
+            <img
+              class="demo cursor"
+              src="Afbeeldingen/Presentatie/Presentatie1.png"
+              style="width: 100%"
+              onclick="currentSlide(1)"
+              alt="Klantvraag"
+            />
+          </div>
+          <div class="column2">
+            <img
+              class="demo cursor"
+              src="Afbeeldingen/Presentatie/Presentatie2.png"
+              style="width: 100%"
+              onclick="currentSlide(2)"
+              alt="Use case diagram"
+            />
+          </div>
+          <div class="column2">
+            <img
+              class="demo cursor"
+              src="Afbeeldingen/Presentatie/Presentatie3.png"
+              style="width: 100%"
+              onclick="currentSlide(3)"
+              alt="Class diagram"
+            />
+          </div>
+          <div class="column2">
+            <img
+              class="demo cursor"
+              src="Afbeeldingen/Presentatie/Presentatie4.png"
+              style="width: 100%"
+              onclick="currentSlide(4)"
+              alt="Leerlingentabel"
+            />
+          </div>
+          <div class="column2">
+            <img
+              class="demo cursor"
+              src="Afbeeldingen/Presentatie/Presentatie5.png"
+              style="width: 100%"
+              onclick="currentSlide(5)"
+              alt="Angular post naar backend"
+            />
+          </div>
+          <div class="column2">
+            <img
+              class="demo cursor"
+              src="Afbeeldingen/Presentatie/Presentatie6.png"
+              style="width: 100%"
+              onclick="currentSlide(6)"
+              alt="Spring code"
+            />
+          </div>
+          <div class="column2">
+            <img
+              class="demo cursor"
+              src="Afbeeldingen/Presentatie/Presentatie7.png"
+              style="width: 100%"
+              onclick="currentSlide(7)"
+              alt="Dependencies"
+            />
+          </div>
+        </div>
+      </div>
+
 
     <!---------------------------------- Menu -------------------------------------->
 

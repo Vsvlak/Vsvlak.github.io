@@ -268,8 +268,8 @@ ul {
   animation: progressAnimation 4s;
 }
 #progress-barJavascript {
-  width: 70%;
-  background-color: #38a365;
+  width: 60%;
+  background-color: #38a39a;
   animation: progressAnimation 4s;
 }
 #progress-barAngular {
@@ -377,8 +377,7 @@ ul {
 
 .afbeeldingEindpresentatie {
   position: relative;
-  width: 95%;
-  left: 2%;
+  width: 100%;
 }
 
 /*---------------------------------------------Menu-----------------------------------------------*/
